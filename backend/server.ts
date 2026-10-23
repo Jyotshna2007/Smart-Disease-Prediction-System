@@ -9,6 +9,8 @@ import { requireAuth, generateToken, sanitizeUser, AuthenticatedRequest } from '
 import { evaluateClinicalFeatures, HealthInputs } from './server/predictionEngine.js';
 import { extractHealthDataFromPdf } from './server/pdfExtractor.js';
 import { generateReportHtml } from './server/reportGenerator.js';
+import { getModelCatalog } from './server/mlModels.js';
+import { fileURLToPath } from 'url';
 
 dotenv.config();
 
@@ -331,34 +333,25 @@ app.get('/api/reports/:id/download', (req: Request, res: Response) => {
   }
 });
 
-// ================= VITE DEV / PRODUCTION STATIC SERVING =================
-async function startServer() {
-  if (process.env.NODE_ENV !== 'production') {
-    const { createServer } = await import('vite');
-    const vite = await createServer({
-      server: {
-        middlewareMode: true,
-        // Never reload the browser when the API writes to the JSON "database"
-        watch: { ignored: ['**/data/**', '**/ml/**', '**/sample_reports/**', '**/*.json'] },
-      },
-      appType: 'spa',
-    });
-    app.use(vite.middlewares);
-  } else {
-    const distPath = path.resolve(process.cwd(), 'dist');
-    if (fs.existsSync(distPath)) {
-      app.use(express.static(distPath));
-      app.get('*', (_req: Request, res: Response) => {
-        res.sendFile(path.resolve(distPath, 'index.html'));
-      });
-    }
-  }
+// ================= MODEL INFORMATION (public, not patient data) =================
+app.get('/api/model-info', (_req: Request, res: Response) => {
+  res.json({ models: getModelCatalog() });
+});
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running on port ${PORT}`);
+// ================= HEALTH CHECK + OPTIONAL STATIC FRONTEND =================
+app.get('/api/health', (_req: Request, res: Response) => res.json({ ok: true }));
+
+// In production, serve the built frontend (frontend/dist) from this same server. During development the
+// frontend runs on its own Vite dev server (port 5173) and proxies /api calls to this backend.
+const here = path.dirname(fileURLToPath(import.meta.url));
+const distPath = path.resolve(here, '..', 'frontend', 'dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get(/^\/(?!api\/).*/, (_req: Request, res: Response) => {
+    res.sendFile(path.resolve(distPath, 'index.html'));
   });
 }
 
-startServer().catch((err) => {
-  console.error('Fatal server startup error:', err);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Backend API running on http://localhost:${PORT}`);
 });

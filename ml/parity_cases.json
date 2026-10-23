@@ -1,0 +1,1056 @@
+{
+ "type_2_diabetes": [
+  {
+   "input": {
+    "glucose_postprandial": 92.0,
+    "diastolic_bp": 62.0,
+    "bmi": 19.5,
+    "age": 25.0
+   },
+   "probability": 0.013486315626922462,
+   "models": {
+    "svm": 0.02313043763523741,
+    "random_forest": 0.005407757525395661,
+    "xgboost": 0.01948103867471218,
+    "ann": 0.005926028672344595
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 111.0,
+    "diastolic_bp": 65.0,
+    "bmi": 24.6,
+    "age": 31.0
+   },
+   "probability": 0.09414793941566751,
+   "models": {
+    "svm": 0.12861701180150908,
+    "random_forest": 0.04584010059040277,
+    "xgboost": 0.11971578747034073,
+    "ann": 0.0824188578004175
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 94.0,
+    "diastolic_bp": 70.0,
+    "bmi": 43.5,
+    "age": 21.0
+   },
+   "probability": 0.11380972740601111,
+   "models": {
+    "svm": 0.12172598222514897,
+    "random_forest": 0.11793249492626647,
+    "xgboost": 0.10819456726312637,
+    "ann": 0.10738586520950268
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 180.0,
+    "diastolic_bp": 90.0,
+    "bmi": 36.5,
+    "age": 35.0
+   },
+   "probability": 0.8493277132567657,
+   "models": {
+    "svm": 0.810975341634542,
+    "random_forest": 0.890660402291021,
+    "xgboost": 0.8805547952651978,
+    "ann": 0.8151203138363022
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 106.0,
+    "diastolic_bp": 70.0,
+    "bmi": 34.2,
+    "age": 52.0
+   },
+   "probability": 0.4622101681770825,
+   "models": {
+    "svm": 0.46253280079594267,
+    "random_forest": 0.444044574249164,
+    "xgboost": 0.49520450830459595,
+    "ann": 0.4470587893586274
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 124.0,
+    "diastolic_bp": 70.0,
+    "bmi": 35.4,
+    "age": 34.0
+   },
+   "probability": 0.514367928010796,
+   "models": {
+    "svm": 0.4995798242349269,
+    "random_forest": 0.5440114908707969,
+    "xgboost": 0.5314785838127136,
+    "ann": 0.4824018131247464
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 125.0,
+    "diastolic_bp": 70.0,
+    "bmi": 28.9,
+    "age": 45.0
+   },
+   "probability": 0.5604226991240007,
+   "models": {
+    "svm": 0.4792408121822383,
+    "random_forest": 0.6204041692156,
+    "xgboost": 0.5582893490791321,
+    "ann": 0.5837564660190323
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 171.0,
+    "diastolic_bp": 110.0,
+    "bmi": 45.4,
+    "age": 54.0
+   },
+   "probability": 0.8299338293295829,
+   "models": {
+    "svm": 0.769766792744979,
+    "random_forest": 0.7883323381094028,
+    "xgboost": 0.9237605929374695,
+    "ann": 0.8378755935264804
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 122.0,
+    "diastolic_bp": 78.0,
+    "bmi": 27.6,
+    "age": 45.0
+   },
+   "probability": 0.47075750427017526,
+   "models": {
+    "svm": 0.4024860499206136,
+    "random_forest": 0.5122284752234414,
+    "xgboost": 0.4625798463821411,
+    "ann": 0.5057356455545049
+   }
+  },
+  {
+   "input": {
+    "glucose_postprandial": 107.0,
+    "diastolic_bp": 74.0,
+    "bmi": 29.6,
+    "age": 31.0
+   },
+   "probability": 0.3127147317838074,
+   "models": {
+    "svm": 0.17555950360120715,
+    "random_forest": 0.4736909695492582,
+    "xgboost": 0.3924066126346588,
+    "ann": 0.20920184135010536
+   }
+  }
+ ],
+ "heart_disease": [
+  {
+   "input": {
+    "age": 51.0,
+    "gender": "female",
+    "smoking_status": "never",
+    "total_cholesterol": 177.0,
+    "systolic_bp": 141.0,
+    "diastolic_bp": 92.0,
+    "bmi": 29.64,
+    "heart_rate": 72.0,
+    "glucose_random": 130.0
+   },
+   "probability": 0.2002053409830521,
+   "models": {
+    "svm": 0.12688849118178255,
+    "random_forest": 0.27344102963878747,
+    "xgboost": 0.27663031220436096,
+    "ann": 0.12386153090727736
+   }
+  },
+  {
+   "input": {
+    "age": 55.0,
+    "gender": "female",
+    "smoking_status": "current",
+    "total_cholesterol": 216.0,
+    "systolic_bp": 125.0,
+    "diastolic_bp": 80.0,
+    "bmi": 27.18,
+    "heart_rate": 86.0,
+    "glucose_random": 244.0
+   },
+   "probability": 0.3393676606806332,
+   "models": {
+    "svm": 0.3198186672280799,
+    "random_forest": 0.34246088674303066,
+    "xgboost": 0.3958682715892792,
+    "ann": 0.299322817162143
+   }
+  },
+  {
+   "input": {
+    "age": 48.0,
+    "gender": "female",
+    "smoking_status": "current",
+    "total_cholesterol": 234.0,
+    "systolic_bp": 120.0,
+    "diastolic_bp": 81.0,
+    "bmi": 23.22,
+    "heart_rate": 67.0,
+    "glucose_random": 83.0
+   },
+   "probability": 0.0778883996916013,
+   "models": {
+    "svm": 0.07344248309602268,
+    "random_forest": 0.06903758408331273,
+    "xgboost": 0.07954447716474533,
+    "ann": 0.08952905442232445
+   }
+  },
+  {
+   "input": {
+    "age": 45.0,
+    "gender": "male",
+    "smoking_status": "never",
+    "total_cholesterol": 213.0,
+    "systolic_bp": 130.0,
+    "diastolic_bp": 80.0,
+    "bmi": 27.25,
+    "heart_rate": 68.0,
+    "glucose_random": 75.0
+   },
+   "probability": 0.08153142286321391,
+   "models": {
+    "svm": 0.0843357637720293,
+    "random_forest": 0.06933326538266779,
+    "xgboost": 0.07199062407016754,
+    "ann": 0.10046603822799102
+   }
+  },
+  {
+   "input": {
+    "age": 58.0,
+    "gender": "female",
+    "smoking_status": "current",
+    "total_cholesterol": 240.0,
+    "systolic_bp": 150.0,
+    "diastolic_bp": 84.0,
+    "bmi": 26.85,
+    "heart_rate": 75.0,
+    "glucose_random": 94.0
+   },
+   "probability": 0.23174088154635236,
+   "models": {
+    "svm": 0.22032927789132234,
+    "random_forest": 0.249755114853658,
+    "xgboost": 0.21750393509864807,
+    "ann": 0.23937519834178103
+   }
+  },
+  {
+   "input": {
+    "age": 49.0,
+    "gender": "male",
+    "smoking_status": "never",
+    "total_cholesterol": 248.0,
+    "systolic_bp": 130.5,
+    "diastolic_bp": 82.0,
+    "bmi": 27.29,
+    "heart_rate": 52.0,
+    "glucose_random": 254.0
+   },
+   "probability": 0.3827432693927107,
+   "models": {
+    "svm": 0.3610250156937336,
+    "random_forest": 0.3394190539145345,
+    "xgboost": 0.43873706459999084,
+    "ann": 0.3917919433625839
+   }
+  },
+  {
+   "input": {
+    "age": 56.0,
+    "gender": "female",
+    "smoking_status": "never",
+    "total_cholesterol": 273.0,
+    "systolic_bp": 125.0,
+    "diastolic_bp": 83.0,
+    "bmi": 24.48,
+    "heart_rate": 65.0,
+    "glucose_random": 66.0
+   },
+   "probability": 0.12142611354637486,
+   "models": {
+    "svm": 0.11624426666773292,
+    "random_forest": 0.13400231372338364,
+    "xgboost": 0.11562885344028473,
+    "ann": 0.11982902035409818
+   }
+  },
+  {
+   "input": {
+    "age": 39.0,
+    "gender": "male",
+    "smoking_status": "never",
+    "total_cholesterol": 202.0,
+    "systolic_bp": 136.5,
+    "diastolic_bp": 79.0,
+    "bmi": 24.35,
+    "heart_rate": 73.0,
+    "glucose_random": 60.0
+   },
+   "probability": 0.06702503367333687,
+   "models": {
+    "svm": 0.06323060639157169,
+    "random_forest": 0.07831498965174917,
+    "xgboost": 0.056123048067092896,
+    "ann": 0.07043149058293374
+   }
+  },
+  {
+   "input": {
+    "age": 56.0,
+    "gender": "female",
+    "smoking_status": "current",
+    "total_cholesterol": 289.0,
+    "systolic_bp": 150.0,
+    "diastolic_bp": 92.0,
+    "bmi": 25.68,
+    "heart_rate": 85.0,
+    "glucose_random": 84.0
+   },
+   "probability": 0.204311374932681,
+   "models": {
+    "svm": 0.18195599690826839,
+    "random_forest": 0.2125848067246629,
+    "xgboost": 0.2113112360239029,
+    "ann": 0.2113934600738898
+   }
+  },
+  {
+   "input": {
+    "age": 54.0,
+    "gender": "female",
+    "smoking_status": "never",
+    "total_cholesterol": 270.0,
+    "systolic_bp": 98.0,
+    "diastolic_bp": 64.0,
+    "bmi": 22.02,
+    "heart_rate": 67.0,
+    "glucose_random": 75.0
+   },
+   "probability": 0.09231281495888019,
+   "models": {
+    "svm": 0.08642729292078928,
+    "random_forest": 0.10879870048553643,
+    "xgboost": 0.09360425919294357,
+    "ann": 0.08042100723625148
+   }
+  }
+ ],
+ "liver_disease": [
+  {
+   "input": {
+    "age": 55.0,
+    "gender": "male",
+    "bilirubin": 3.6,
+    "bilirubin_direct": 1.6,
+    "alp": 349.0,
+    "alt": 40.0,
+    "ast": 70.0,
+    "total_protein": 7.2,
+    "albumin": 2.9
+   },
+   "probability": 0.9629609359333283,
+   "models": {
+    "svm": 0.9115940942046333,
+    "random_forest": 0.9875244544071796,
+    "xgboost": 0.9877687096595764,
+    "ann": 0.9649564854619238
+   }
+  },
+  {
+   "input": {
+    "age": 65.0,
+    "gender": "male",
+    "bilirubin": 0.7,
+    "bilirubin_direct": 0.2,
+    "alp": 199.0,
+    "alt": 19.0,
+    "ast": 22.0,
+    "total_protein": 6.3,
+    "albumin": 3.6
+   },
+   "probability": 0.39623676194407803,
+   "models": {
+    "svm": 0.5445037360372602,
+    "random_forest": 0.412233902282736,
+    "xgboost": 0.15337486565113068,
+    "ann": 0.4748345438051853
+   }
+  },
+  {
+   "input": {
+    "age": 22.0,
+    "gender": "female",
+    "bilirubin": 6.7,
+    "bilirubin_direct": 3.2,
+    "alp": 850.0,
+    "alt": 154.0,
+    "ast": 248.0,
+    "total_protein": 6.2,
+    "albumin": 2.8
+   },
+   "probability": 0.9605634745677739,
+   "models": {
+    "svm": 0.9512186484939933,
+    "random_forest": 0.9672594773647403,
+    "xgboost": 0.9612945318222046,
+    "ann": 0.9624812405901574
+   }
+  },
+  {
+   "input": {
+    "age": 55.0,
+    "gender": "female",
+    "bilirubin": 0.8,
+    "bilirubin_direct": 0.2,
+    "alp": 225.0,
+    "alt": 14.0,
+    "ast": 23.0,
+    "total_protein": 6.1,
+    "albumin": 3.3
+   },
+   "probability": 0.46731622806955797,
+   "models": {
+    "svm": 0.5128894749498123,
+    "random_forest": 0.5459241153590668,
+    "xgboost": 0.430388867855072,
+    "ann": 0.3800624541142808
+   }
+  },
+  {
+   "input": {
+    "age": 58.0,
+    "gender": "male",
+    "bilirubin": 1.7,
+    "bilirubin_direct": 0.8,
+    "alp": 188.0,
+    "alt": 60.0,
+    "ast": 84.0,
+    "total_protein": 5.9,
+    "albumin": 3.5
+   },
+   "probability": 0.6346859480265629,
+   "models": {
+    "svm": 0.818439479448471,
+    "random_forest": 0.6627452124092552,
+    "xgboost": 0.5222164392471313,
+    "ann": 0.5353426610013942
+   }
+  },
+  {
+   "input": {
+    "age": 28.0,
+    "gender": "female",
+    "bilirubin": 1.0,
+    "bilirubin_direct": 0.3,
+    "alp": 90.0,
+    "alt": 18.0,
+    "ast": 108.0,
+    "total_protein": 6.8,
+    "albumin": 3.1
+   },
+   "probability": 0.4580793814600152,
+   "models": {
+    "svm": 0.5240448648316378,
+    "random_forest": 0.5270080909290072,
+    "xgboost": 0.4503955543041229,
+    "ann": 0.3308690157752927
+   }
+  },
+  {
+   "input": {
+    "age": 45.0,
+    "gender": "male",
+    "bilirubin": 0.7,
+    "bilirubin_direct": 0.2,
+    "alp": 180.0,
+    "alt": 18.0,
+    "ast": 58.0,
+    "total_protein": 6.7,
+    "albumin": 3.7
+   },
+   "probability": 0.47031337108567356,
+   "models": {
+    "svm": 0.52411427797403,
+    "random_forest": 0.4720767882730242,
+    "xgboost": 0.4677155315876007,
+    "ann": 0.4173468865080394
+   }
+  },
+  {
+   "input": {
+    "age": 38.0,
+    "gender": "female",
+    "bilirubin": 2.6,
+    "bilirubin_direct": 1.2,
+    "alp": 410.0,
+    "alt": 59.0,
+    "ast": 57.0,
+    "total_protein": 5.6,
+    "albumin": 3.0
+   },
+   "probability": 0.617765045029141,
+   "models": {
+    "svm": 0.850912188793192,
+    "random_forest": 0.639927031198074,
+    "xgboost": 0.3667004704475403,
+    "ann": 0.6135204896777575
+   }
+  },
+  {
+   "input": {
+    "age": 66.0,
+    "gender": "male",
+    "bilirubin": 16.6,
+    "bilirubin_direct": 7.6,
+    "alp": 315.0,
+    "alt": 233.0,
+    "ast": 384.0,
+    "total_protein": 6.9,
+    "albumin": 2.0
+   },
+   "probability": 0.9917232878880076,
+   "models": {
+    "svm": 0.9846407097172649,
+    "random_forest": 0.9878413812858894,
+    "xgboost": 0.9945306181907654,
+    "ann": 0.9998804423581108
+   }
+  },
+  {
+   "input": {
+    "age": 31.0,
+    "gender": "male",
+    "bilirubin": 0.8,
+    "bilirubin_direct": 0.2,
+    "alp": 198.0,
+    "alt": 43.0,
+    "ast": 31.0,
+    "total_protein": 7.3,
+    "albumin": 4.0
+   },
+   "probability": 0.582178477075256,
+   "models": {
+    "svm": 0.5465530842695773,
+    "random_forest": 0.5557730922475954,
+    "xgboost": 0.7145031094551086,
+    "ann": 0.5118846223287429
+   }
+  }
+ ],
+ "kidney_disease": [
+  {
+   "input": {
+    "age": 23.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 99.0,
+    "blood_urea": 46.0,
+    "serum_creatinine": 1.2,
+    "hemoglobin": 17.7,
+    "hematocrit": 46.0,
+    "wbc_count": 4300.0,
+    "rbc_count": 5.5
+   },
+   "probability": 0.047159471345445396,
+   "models": {
+    "svm": 0.09394915653420005,
+    "random_forest": 0.03931512899528304,
+    "xgboost": 0.04067256674170494,
+    "ann": 0.014701033110593547
+   }
+  },
+  {
+   "input": {
+    "age": 33.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 128.0,
+    "blood_urea": 38.0,
+    "serum_creatinine": 0.6,
+    "hemoglobin": 13.1,
+    "hematocrit": 45.0,
+    "wbc_count": 6200.0,
+    "rbc_count": 4.5
+   },
+   "probability": 0.11660722149063643,
+   "models": {
+    "svm": 0.13901459110697087,
+    "random_forest": 0.19227129599063336,
+    "xgboost": 0.08310353755950928,
+    "ann": 0.05203946130543223
+   }
+  },
+  {
+   "input": {
+    "age": 40.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 140.0,
+    "blood_urea": 10.0,
+    "serum_creatinine": 1.2,
+    "hemoglobin": 15.0,
+    "hematocrit": 48.0,
+    "wbc_count": 10400.0,
+    "rbc_count": 4.5
+   },
+   "probability": 0.2452983997667684,
+   "models": {
+    "svm": 0.13911075383419338,
+    "random_forest": 0.4270275755652939,
+    "xgboost": 0.23029263317584991,
+    "ann": 0.18476263649173644
+   }
+  },
+  {
+   "input": {
+    "age": 34.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 121.0,
+    "blood_urea": 27.0,
+    "serum_creatinine": 1.2,
+    "hemoglobin": 13.6,
+    "hematocrit": 52.0,
+    "wbc_count": 9200.0,
+    "rbc_count": 6.3
+   },
+   "probability": 0.09559245327765709,
+   "models": {
+    "svm": 0.13893903926913456,
+    "random_forest": 0.07613302791383568,
+    "xgboost": 0.043546516448259354,
+    "ann": 0.12375122947939876
+   }
+  },
+  {
+   "input": {
+    "age": 23.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 111.0,
+    "blood_urea": 34.0,
+    "serum_creatinine": 1.1,
+    "hemoglobin": 14.3,
+    "hematocrit": 41.0,
+    "wbc_count": 7200.0,
+    "rbc_count": 5.0
+   },
+   "probability": 0.22670996947857128,
+   "models": {
+    "svm": 0.2625384438183857,
+    "random_forest": 0.13583993621033044,
+    "xgboost": 0.15764875710010529,
+    "ann": 0.35081274078546365
+   }
+  },
+  {
+   "input": {
+    "age": 15.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 93.0,
+    "blood_urea": 17.0,
+    "serum_creatinine": 0.9,
+    "hemoglobin": 16.7,
+    "hematocrit": 50.0,
+    "wbc_count": 6200.0,
+    "rbc_count": 5.2
+   },
+   "probability": 0.10518504213974922,
+   "models": {
+    "svm": 0.13705208025617385,
+    "random_forest": 0.11391484383407784,
+    "xgboost": 0.03850075975060463,
+    "ann": 0.1312724847181406
+   }
+  },
+  {
+   "input": {
+    "age": 55.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 133.0,
+    "blood_urea": 17.0,
+    "serum_creatinine": 1.2,
+    "hemoglobin": 13.2,
+    "hematocrit": 41.0,
+    "wbc_count": 6800.0,
+    "rbc_count": 5.3
+   },
+   "probability": 0.5617400625791037,
+   "models": {
+    "svm": 0.8057843488571964,
+    "random_forest": 0.32833976793422226,
+    "xgboost": 0.4143419563770294,
+    "ann": 0.6984941771479667
+   }
+  },
+  {
+   "input": {
+    "age": 32.0,
+    "diastolic_bp": 70.0,
+    "glucose_random": 100.0,
+    "blood_urea": 29.0,
+    "serum_creatinine": 1.1,
+    "hemoglobin": 14.3,
+    "hematocrit": 43.0,
+    "wbc_count": 6700.0,
+    "rbc_count": 5.9
+   },
+   "probability": 0.048363173911579425,
+   "models": {
+    "svm": 0.03574264771949544,
+    "random_forest": 0.06237021856720243,
+    "xgboost": 0.05366832762956619,
+    "ann": 0.04167150173005366
+   }
+  },
+  {
+   "input": {
+    "age": 71.0,
+    "diastolic_bp": 70.0,
+    "glucose_random": 219.0,
+    "blood_urea": 82.0,
+    "serum_creatinine": 3.6,
+    "hemoglobin": 10.4,
+    "hematocrit": 33.0,
+    "wbc_count": 5600.0,
+    "rbc_count": 3.6
+   },
+   "probability": 0.997282345020613,
+   "models": {
+    "svm": 0.9965546272694964,
+    "random_forest": 1.0,
+    "xgboost": 0.9925750494003296,
+    "ann": 0.9999997034126258
+   }
+  },
+  {
+   "input": {
+    "age": 73.0,
+    "diastolic_bp": 80.0,
+    "glucose_random": 118.0,
+    "blood_urea": 44.0,
+    "serum_creatinine": 0.7,
+    "hemoglobin": 14.8,
+    "hematocrit": 45.0,
+    "wbc_count": 9300.0,
+    "rbc_count": 4.7
+   },
+   "probability": 0.16393049425312278,
+   "models": {
+    "svm": 0.13901490551776505,
+    "random_forest": 0.11348849495676956,
+    "xgboost": 0.10646715760231018,
+    "ann": 0.2967514189356463
+   }
+  }
+ ],
+ "stroke_risk": [
+  {
+   "input": {
+    "age": 43.0,
+    "gender": "female",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 57.79,
+    "bmi": 24.8,
+    "smoking_status": "current"
+   },
+   "probability": 0.011968876231226845,
+   "models": {
+    "svm": 0.014020731468312786,
+    "random_forest": 0.013735655332566054,
+    "xgboost": 0.006915421225130558,
+    "ann": 0.01320369689889798
+   }
+  },
+  {
+   "input": {
+    "age": 65.0,
+    "gender": "female",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 74.01,
+    "bmi": 28.7,
+    "smoking_status": "current"
+   },
+   "probability": 0.0558969794679371,
+   "models": {
+    "svm": 0.07115453620553869,
+    "random_forest": 0.03854945814957035,
+    "xgboost": 0.05962001904845238,
+    "ann": 0.05426390446818699
+   }
+  },
+  {
+   "input": {
+    "age": 29.0,
+    "gender": "male",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 193.81,
+    "bmi": 46.8,
+    "smoking_status": "never"
+   },
+   "probability": 0.01710039298035257,
+   "models": {
+    "svm": 0.009988337919834613,
+    "random_forest": 0.048126234232283724,
+    "xgboost": 0.006858715321868658,
+    "ann": 0.003428284447423286
+   }
+  },
+  {
+   "input": {
+    "age": 70.0,
+    "gender": "male",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 72.56,
+    "bmi": 30.4,
+    "smoking_status": "former"
+   },
+   "probability": 0.0742098207792768,
+   "models": {
+    "svm": 0.07613905165334434,
+    "random_forest": 0.06236991819576588,
+    "xgboost": 0.08694428950548172,
+    "ann": 0.07138602376251528
+   }
+  },
+  {
+   "input": {
+    "age": 68.0,
+    "gender": "female",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 79.58,
+    "bmi": 22.2,
+    "smoking_status": "never"
+   },
+   "probability": 0.07083675757195307,
+   "models": {
+    "svm": 0.06477982745185663,
+    "random_forest": 0.07141339401614272,
+    "xgboost": 0.07790570706129074,
+    "ann": 0.06924810175852222
+   }
+  },
+  {
+   "input": {
+    "age": 46.0,
+    "gender": "male",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 66.59,
+    "bmi": 36.7,
+    "smoking_status": "former"
+   },
+   "probability": 0.021331313788383852,
+   "models": {
+    "svm": 0.013827866232564871,
+    "random_forest": 0.018046188750092083,
+    "xgboost": 0.03182985261082649,
+    "ann": 0.02162134756005196
+   }
+  },
+  {
+   "input": {
+    "age": 39.0,
+    "gender": "male",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 102.35,
+    "bmi": 23.6,
+    "smoking_status": "never"
+   },
+   "probability": 0.00635435287423765,
+   "models": {
+    "svm": 0.0072905844001862515,
+    "random_forest": 0.007927168006309193,
+    "xgboost": 0.007322889287024736,
+    "ann": 0.0028767698034304207
+   }
+  },
+  {
+   "input": {
+    "age": 54.0,
+    "gender": "male",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 110.38,
+    "bmi": 27.6,
+    "smoking_status": "former"
+   },
+   "probability": 0.040366100597331256,
+   "models": {
+    "svm": 0.029933181584866766,
+    "random_forest": 0.04006310034525539,
+    "xgboost": 0.0521995909512043,
+    "ann": 0.03926852950799857
+   }
+  },
+  {
+   "input": {
+    "age": 57.0,
+    "gender": "male",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 84.79,
+    "bmi": 32.8,
+    "smoking_status": "former"
+   },
+   "probability": 0.0387343416365515,
+   "models": {
+    "svm": 0.033104394132315654,
+    "random_forest": 0.03161007122033946,
+    "xgboost": 0.037271592766046524,
+    "ann": 0.05295130842750435
+   }
+  },
+  {
+   "input": {
+    "age": 23.0,
+    "gender": "female",
+    "systolic_bp": 118.0,
+    "diastolic_bp": 76.0,
+    "glucose_random": 79.39,
+    "bmi": 27.6,
+    "smoking_status": "never"
+   },
+   "probability": 0.005421975962061655,
+   "models": {
+    "svm": 0.0026182790577474694,
+    "random_forest": 0.013975372342712315,
+    "xgboost": 0.004183359909802675,
+    "ann": 0.0009108925379841595
+   }
+  }
+ ],
+ "hypothyroidism": [
+  {
+   "input": {
+    "tsh": 0.2,
+    "age": 41.0,
+    "gender": "female"
+   },
+   "probability": 0.002299350879485755,
+   "models": {
+    "svm": 0.00028855234628294245,
+    "random_forest": 0.0035475700767841293,
+    "xgboost": 0.0018272098386660218,
+    "ann": 0.0035340712562099267
+   }
+  },
+  {
+   "input": {
+    "tsh": 52.0,
+    "age": 24.0,
+    "gender": "female"
+   },
+   "probability": 0.5823435286730808,
+   "models": {
+    "svm": 0.6369635058439369,
+    "random_forest": 0.5345613296362559,
+    "xgboost": 0.5711075663566589,
+    "ann": 0.5867417128554714
+   }
+  },
+  {
+   "input": {
+    "tsh": 5.2,
+    "age": 64.0,
+    "gender": "female"
+   },
+   "probability": 0.03201976268490725,
+   "models": {
+    "svm": 0.057210357821938396,
+    "random_forest": 0.004847663550809246,
+    "xgboost": 0.0016916251042857766,
+    "ann": 0.06432940426259558
+   }
+  },
+  {
+   "input": {
+    "tsh": 165.0,
+    "age": 53.0,
+    "gender": "female"
+   },
+   "probability": 0.8545229168115828,
+   "models": {
+    "svm": 0.9426302267990444,
+    "random_forest": 0.811118055245182,
+    "xgboost": 0.8380147218704224,
+    "ann": 0.8263286633316822
+   }
+  },
+  {
+   "input": {
+    "tsh": 2.3,
+    "age": 70.0,
+    "gender": "female"
+   },
+   "probability": 0.011503276714588201,
+   "models": {
+    "svm": 0.01749118588929821,
+    "random_forest": 0.004239449587047563,
+    "xgboost": 0.00321414927020669,
+    "ann": 0.02106832211180034
+   }
+  },
+  {
+   "input": {
+    "tsh": 0.6,
+    "age": 26.0,
+    "gender": "female"
+   },
+   "probability": 0.002874856423590909,
+   "models": {
+    "svm": 0.00195871712695253,
+    "random_forest": 0.001908306415604495,
+    "xgboost": 0.0022725241724401712,
+    "ann": 0.00535987797936644
+   }
+  },
+  {
+   "input": {
+    "tsh": 0.04,
+    "age": 84.0,
+    "gender": "female"
+   },
+   "probability": 0.00296506416253701,
+   "models": {
+    "svm": 7.73128168058562e-05,
+    "random_forest": 0.006859206883180681,
+    "xgboost": 0.003127426840364933,
+    "ann": 0.0017963101097965709
+   }
+  },
+  {
+   "input": {
+    "tsh": 1.3,
+    "age": 51.0,
+    "gender": "female"
+   },
+   "probability": 0.005203546932738942,
+   "models": {
+    "svm": 0.005082656260601941,
+    "random_forest": 0.006266168992791279,
+    "xgboost": 0.0017135906964540482,
+    "ann": 0.007751771781108502
+   }
+  }
+ ]
+}

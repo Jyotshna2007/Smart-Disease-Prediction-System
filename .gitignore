@@ -1,11 +1,13 @@
 node_modules/
-build/
 dist/
+build/
 coverage/
 .DS_Store
 *.log
-.env*
+.env
+.env.*
 !.env.example
 
-# ML training data is downloaded on demand by ml/train_models.py
+# ML training data is downloaded on demand by backend/ml/train_models.py
 ml/data/
+__pycache__/
