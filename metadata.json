@@ -1,6 +1,0 @@
-{
-  "name": "Smart Disease Prediction System",
-  "description": "AI-powered clinical health prediction platform providing multi-disease risk assessments, report analysis, and multilingual clinical insights.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
