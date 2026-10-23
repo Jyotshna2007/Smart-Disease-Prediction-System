@@ -1,0 +1,343 @@
+{
+  "users": [
+    {
+      "id": "2ac36292-738f-4010-b088-bcefbb3aa3f0",
+      "name": "Jyo",
+      "email": "kondepudijyotshna@gmail.com",
+      "password_hash": "e0159542cb24c85cbaae321411ac505f:aa7a67f6a87eba66a04354655c6a853f650bf5495a1bf95900f9fcaad675e03334ea1c31ad7c70cfff32a3566438d076197e8b4f6ed33617df695dcf513c4db6",
+      "preferred_language": "en",
+      "created_at": "2026-10-23T10:26:05.271Z"
+    }
+  ],
+  "predictions": [
+    {
+      "id": "6c394937-2ff4-411c-8dd8-8a277b6b9ebe",
+      "user_id": "2ac36292-738f-4010-b088-bcefbb3aa3f0",
+      "input_type": "pdf",
+      "file_name": "sample_medical_report_2.pdf",
+      "condition_id": "heart_disease",
+      "predicted_condition": "Coronary Heart Disease",
+      "predicted_condition_te": "కొరోనరీ హార్ట్ డిసీజ్ (గుండె జబ్బు)",
+      "predicted_condition_hi": "कोरोनरी हृदय रोग",
+      "confidence": 8,
+      "risk_level": "Severe",
+      "signals": [
+        {
+          "name": "Body Mass Index (BMI)",
+          "key": "bmi",
+          "value": 22.9,
+          "unit": "kg/m²",
+          "normalRange": "18.5 - 24.9",
+          "status": "normal",
+          "impactDescription": "Normal body mass range"
+        },
+        {
+          "name": "Blood Pressure",
+          "key": "blood_pressure",
+          "value": "90/120",
+          "unit": "mmHg",
+          "normalRange": "< 120/80",
+          "status": "high",
+          "impactDescription": "Stage 2 hypertensive vascular strain"
+        },
+        {
+          "name": "Heart Rate",
+          "key": "heart_rate",
+          "value": 72,
+          "unit": "bpm",
+          "normalRange": "60 - 100",
+          "status": "normal",
+          "impactDescription": "Normal resting pulse"
+        },
+        {
+          "name": "Fasting Blood Glucose",
+          "key": "glucose_fasting",
+          "value": 120,
+          "unit": "mg/dL",
+          "normalRange": "70 - 99",
+          "status": "elevated",
+          "impactDescription": "Impaired fasting glucose"
+        },
+        {
+          "name": "Total Cholesterol",
+          "key": "total_cholesterol",
+          "value": 178,
+          "unit": "mg/dL",
+          "normalRange": "< 200",
+          "status": "normal",
+          "impactDescription": "Optimal physiological total lipid profile"
+        },
+        {
+          "name": "Report Finding",
+          "key": "document_finding",
+          "value": "Coronary Artery Disease",
+          "unit": "Clinical",
+          "normalRange": "Absent",
+          "status": "high",
+          "impactDescription": "Documented clinical impression or confirmed finding: Coronary Artery Disease"
+        }
+      ],
+      "summary": "Assessment predicts Coronary Heart Disease based on hemodynamic arterial tension (90/120 mmHg), elevated atherogenic serum cholesterol (178 mg/dL), and reported ischemic chest tightness/discomfort. Multi-parameter arterial scoring indicates significant coronary atherosclerotic risk.",
+      "summary_te": "రక్తపోటు కొలతలు (90/120 mmHg), కొలెస్ట్రాల్ (178 mg/dL) మరియు ఛాతీ నొప్పి ఆధారంగా కొరోనరీ గుండె జబ్బు అంచనా వేయబడింది. గుండె రక్తనాళాలలో ఒత్తిడిని క్లినికల్ మోడల్స్ సూచిస్తున్నాయి.",
+      "summary_hi": "रक्तचाप माप (90/120 mmHg), उच्च कोलेस्ट्रॉल (178 mg/dL) और सीने में दर्द के आधार पर कोरोनरी हृदय रोग की पहचान की गई है।",
+      "recommendations": [
+        "Schedule an evaluation with a cardiologist for a resting 12-lead ECG, echocardiogram, and treadmill stress test.",
+        "Adopt a cardioprotective low-sodium (< 2,000 mg/day) and low-saturated-fat dietary protocol.",
+        "Cease all tobacco use immediately if currently smoking.",
+        "Seek emergency care immediately if experiencing active radiating chest heaviness, diaphoresis, or pain radiating to jaw or left arm."
+      ],
+      "recommendations_te": [
+        "పూర్తి ఈసీజీ (ECG) మరియు ఎకోకార్డియోగ్రామ్ పరీక్షల కోసం కార్డియాలజిస్ట్‌ను సంప్రదించండి.",
+        "ఉప్పు మరియు కొవ్వు పదార్ధాలను తగ్గించి ఆరోగ్యకరమైన ఆహారాన్ని తీసుకోండి.",
+        "తీవ్రమైన ఛాతీ నొప్పి ఉంటే వెంటనే అత్యవసర వైద్య విభాగాన్ని ఆశ్రయించండి."
+      ],
+      "recommendations_hi": [
+        "ईसीजी और इकोकार्डियोग्राम के लिए हृदय रोग विशेषज्ञ से तुरंत मिलें।",
+        "कम सोडियम और कम वसा वाले आहार का पालन करें तथा धूम्रपान बंद करें।",
+        "सीने में तेज भारीपन महसूस होने पर तुरंत आपातकालीन सहायता लें।"
+      ],
+      "raw_input": {
+        "age": 34,
+        "chest_pain": true,
+        "diagnosed_conditions": [
+          "Coronary Artery Disease"
+        ],
+        "height_cm": 175,
+        "weight_kg": 70,
+        "bmi": 22.9,
+        "systolic_bp": 90,
+        "diastolic_bp": 120,
+        "heart_rate": 72,
+        "total_cholesterol": 178,
+        "glucose_fasting": 120
+      },
+      "method": "ml+guidelines",
+      "model_info": {
+        "method": "ml+guidelines",
+        "model": {
+          "id": "heart_disease",
+          "name": "Coronary Heart Disease (10-year risk)",
+          "algorithm": "Ensemble of SVM + Random Forest + XGBoost + ANN (soft voting)",
+          "dataset": "Framingham Heart Study (cleaned extract)",
+          "population": "Adults aged 32-70 from Framingham, Massachusetts (USA)",
+          "n_samples": 3658,
+          "cv_auc": 0.73,
+          "cv_auc_std": 0.026,
+          "probability_pct": 8,
+          "tier": "Low",
+          "members": [
+            {
+              "id": "svm",
+              "name": "SVM (RBF kernel)",
+              "probability_pct": 3,
+              "cv_auc": 0.734,
+              "cv_auc_std": 0.025
+            },
+            {
+              "id": "random_forest",
+              "name": "Random Forest",
+              "probability_pct": 22,
+              "cv_auc": 0.721,
+              "cv_auc_std": 0.03
+            },
+            {
+              "id": "xgboost",
+              "name": "XGBoost",
+              "probability_pct": 5,
+              "cv_auc": 0.72,
+              "cv_auc_std": 0.027
+            },
+            {
+              "id": "ann",
+              "name": "ANN (neural network)",
+              "probability_pct": 2,
+              "cv_auc": 0.729,
+              "cv_auc_std": 0.025
+            }
+          ],
+          "drivers": [
+            {
+              "feature": "diastolic bp",
+              "direction": "raises"
+            },
+            {
+              "feature": "age",
+              "direction": "lowers"
+            },
+            {
+              "feature": "systolic bp",
+              "direction": "lowers"
+            }
+          ],
+          "features_provided": [
+            "age",
+            "total_cholesterol",
+            "systolic_bp",
+            "diastolic_bp",
+            "bmi",
+            "heart_rate",
+            "glucose"
+          ],
+          "features_imputed": [
+            "male",
+            "current_smoker"
+          ],
+          "caveats": [
+            "Framingham cohort is US-based and 32-70 years old; risk may be mis-calibrated for other populations."
+          ],
+          "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)"
+        }
+      },
+      "secondary_predictions": [
+        {
+          "disease_name": "Essential Hypertension",
+          "risk_level": "Severe",
+          "confidence": 88,
+          "method": "guidelines"
+        },
+        {
+          "disease_name": "Pre-Diabetes",
+          "risk_level": "Moderate",
+          "confidence": 55,
+          "method": "guidelines"
+        },
+        {
+          "disease_name": "Type 2 Diabetes",
+          "risk_level": "Moderate",
+          "confidence": 18,
+          "method": "guidelines"
+        }
+      ],
+      "created_at": "2026-10-23T10:26:38.898Z"
+    },
+    {
+      "id": "76181a42-84c2-4f40-acde-eddfa6cbd1ef",
+      "user_id": "2ac36292-738f-4010-b088-bcefbb3aa3f0",
+      "input_type": "pdf",
+      "file_name": "sample_thyroid_report.pdf",
+      "condition_id": "thyroid_disease",
+      "predicted_condition": "Primary Hypothyroidism",
+      "predicted_condition_te": "హైపోథైరాయిడిజం (థైరాయిడ్ వ్యాధి)",
+      "predicted_condition_hi": "हाइपोथायरायडिज्म",
+      "confidence": 23,
+      "risk_level": "Severe",
+      "signals": [
+        {
+          "name": "Body Mass Index (BMI)",
+          "key": "bmi",
+          "value": 30.5,
+          "unit": "kg/m²",
+          "normalRange": "18.5 - 24.9",
+          "status": "high",
+          "impactDescription": "Obese range; high visceral adiposity"
+        },
+        {
+          "name": "Heart Rate",
+          "key": "heart_rate",
+          "value": 58,
+          "unit": "bpm",
+          "normalRange": "60 - 100",
+          "status": "low",
+          "impactDescription": "Bradycardia noted"
+        },
+        {
+          "name": "Thyroid Stimulating Hormone (TSH)",
+          "key": "tsh",
+          "value": 14.2,
+          "unit": "mIU/L",
+          "normalRange": "0.4 - 4.5",
+          "status": "high",
+          "impactDescription": "Elevated thyrotropin signaling hypothyroidism"
+        }
+      ],
+      "summary": "Assessment predicts Primary Hypothyroidism based on elevated serum Thyroid Stimulating Hormone (TSH: 14.2 mIU/L [Normal: 0.4 - 4.5 mIU/L], Free T4: 56 ng/dL), clinical cold sensitivity, and cellular metabolic slowing. Endocrine algorithmic models confirm primary thyroid hormone deficit.",
+      "summary_te": "పెరిగిన TSH హార్మోన్ స్థాయిలు (TSH: 14.2 mIU/L) మరియు అలసట ఆధారంగా హైపోథైరాయిడిజం అంచనా వేయబడింది. థైరాయిడ్ గ్రంధి పనితీరు తగ్గినట్లు ఎండోక్రైన్ మోడల్ నిర్ధారిస్తుంది.",
+      "summary_hi": "बढ़े हुए TSH स्तर (TSH: 14.2 mIU/L) और लगातार थकान के आधार पर हाइपोथायरायडिज्म की पहचान की गई है।",
+      "recommendations": [
+        "Consult an endocrinologist for a full thyroid profile (Free T3, Free T4, and anti-TPO antibodies).",
+        "Discuss initiation or dosage optimization of levothyroxine sodium replacement therapy.",
+        "Take prescribed thyroid medication strictly on an empty stomach with water 30-60 minutes before breakfast."
+      ],
+      "recommendations_te": [
+        "పూర్తి థైరాయిడ్ పరీక్షల (Free T3, Free T4, anti-TPO) కోసం ఎండోక్రినాలజిస్ట్‌ను సంప్రదించండి.",
+        "వైద్యుల సలహా ప్రకారం థైరాయిడ్ మందులను క్రమం తప్పకుండా తీసుకోండి."
+      ],
+      "recommendations_hi": [
+        "थायरॉइड प्रोफाइल परीक्षण के लिए विशेषज्ञ से परामर्श लें और नियमित दवा लें।"
+      ],
+      "raw_input": {
+        "fatigue": true,
+        "height_cm": 160,
+        "weight_kg": 78,
+        "bmi": 30.5,
+        "heart_rate": 58,
+        "tsh": 14.2,
+        "free_t4": 56
+      },
+      "method": "ml+guidelines",
+      "model_info": {
+        "method": "ml+guidelines",
+        "model": {
+          "id": "hypothyroidism",
+          "name": "Hypothyroidism",
+          "algorithm": "Ensemble of SVM + Random Forest + XGBoost + ANN (soft voting)",
+          "dataset": "UCI Thyroid Disease (hypothyroid) dataset, Garavan Institute / Sydney",
+          "population": "Referred patients with a measured TSH",
+          "n_samples": 2291,
+          "cv_auc": 0.969,
+          "cv_auc_std": 0.019,
+          "probability_pct": 23,
+          "tier": "High",
+          "members": [
+            {
+              "id": "svm",
+              "name": "SVM (RBF kernel)",
+              "probability_pct": 23,
+              "cv_auc": 0.97,
+              "cv_auc_std": 0.016
+            },
+            {
+              "id": "random_forest",
+              "name": "Random Forest",
+              "probability_pct": 27,
+              "cv_auc": 0.972,
+              "cv_auc_std": 0.017
+            },
+            {
+              "id": "xgboost",
+              "name": "XGBoost",
+              "probability_pct": 21,
+              "cv_auc": 0.965,
+              "cv_auc_std": 0.023
+            },
+            {
+              "id": "ann",
+              "name": "ANN (neural network)",
+              "probability_pct": 22,
+              "cv_auc": 0.968,
+              "cv_auc_std": 0.018
+            }
+          ],
+          "drivers": [
+            {
+              "feature": "tsh",
+              "direction": "raises"
+            }
+          ],
+          "features_provided": [
+            "tsh"
+          ],
+          "features_imputed": [
+            "age",
+            "male"
+          ],
+          "caveats": [
+            "Essentially a TSH-driven model; free T4 and clinical context are not modelled."
+          ],
+          "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)"
+        }
+      },
+      "created_at": "2026-10-23T10:27:03.462Z"
+    }
+  ]
+}
