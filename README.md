@@ -5,11 +5,45 @@
 Multi-disease screening app: enter lab values manually or upload a PDF lab report, and get a risk
 assessment in English, Telugu or Hindi.
 
+## Project structure
+
+```
+backend/    Express API: login, PDF extraction, prediction engine (loads the ML models), report generation, data/
+ml/         The machine-learning project: training script, trained models, tests, datasets, sample reports
+frontend/   React + Vite + Tailwind web app
+README.md
+.gitignore
+```
+
+## Run locally (two terminals)
+
+```bash
+# 1) Backend  ->  http://localhost:3000
+cd backend
+cp .env.example .env        # optional: add GEMINI_API_KEY for PDF reading
+npm install
+npm run dev
+
+# 2) Frontend ->  http://localhost:5173   (proxies /api to the backend)
+cd frontend
+npm install
+npm run dev
+```
+
+Open http://localhost:5173. For a single-server production run: `cd frontend && npm run build`, then
+`cd backend && npm start` - the backend serves `frontend/dist` automatically.
+
+## Patient-friendly results
+
+The result screen and downloadable report only show the person's own result. Model accuracy, datasets and the
+four individual model estimates are kept on a separate **About the Model** page (menu tab, or the small link at
+the bottom of a result), written in plain language in English, Telugu and Hindi.
+
 ## How predictions work
 
-Two layers run side by side (`server/predictionEngine.ts`):
+Two layers run side by side (`backend/server/predictionEngine.ts`):
 
-1. **Trained machine-learning models** (`server/models/*.json`, trained by `ml/train_models.py`) for
+1. **Trained machine-learning models** (`ml/models/*.json`, trained by `ml/train_models.py`) for
    diseases that have a suitable public dataset.
 2. **Clinical guideline rules** for the remaining diseases (and as a safety net for the ML diseases).
    These are hand-written thresholds from published guidelines. They are **not** trained models.
@@ -63,18 +97,12 @@ Disease, Kaggle Stroke Prediction, UCI Thyroid (hypothyroid). See `ml/train_mode
 
 ```bash
 pip install -r ml/requirements.txt
-npm run train      # downloads datasets, cross-validates (~7 min), rewrites server/models/*.json
-npm run test:ml    # checks the TypeScript runtime matches scikit-learn + end-to-end scenarios
+python3 ml/train_models.py     # downloads datasets, cross-validates (~7 min), rewrites ml/models/*.json
+cd backend && npm install && npm run test:ml    # checks the TypeScript runtime matches scikit-learn + end-to-end scenarios
 ```
 
-## Run locally
 
-1. `npm install`
-2. Set `GEMINI_API_KEY` in `.env.local` (optional, used for PDF extraction)
-3. `npm run dev`
+## Sample reports
 
-## PDF upload fix + sample reports
-* `server/pdfExtractor.ts` now supports both pdf-parse v1 (function) and v2 (`PDFParse` class). With v2 the old
-  code threw silently, so every PDF returned empty text and showed "couldn't find enough information".
-* `sample_reports/*.pdf` – one test lab report per ML-backed disease (+ a healthy one). Regenerate with
-  `pip install reportlab && python ml/make_sample_reports.py`.
+`ml/sample_reports/*.pdf` - one test lab report per ML-backed disease (plus a healthy one) for trying the PDF upload.
+Regenerate with `pip install reportlab && python ml/make_sample_reports.py`.
