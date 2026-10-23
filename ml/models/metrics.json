@@ -1,0 +1,236 @@
+{
+ "type_2_diabetes": {
+  "name": "Type 2 Diabetes",
+  "n": 724,
+  "prevalence": 0.3439,
+  "tiers": {
+   "moderate": 0.3423,
+   "high": 0.5594,
+   "severe": 0.7636
+  },
+  "cv_auc_mean": 0.837,
+  "cv_auc_std": 0.02,
+  "pr_auc": 0.692,
+  "brier": 0.154,
+  "sensitivity_at_moderate": 0.787,
+  "specificity_at_moderate": 0.741,
+  "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)",
+  "per_model": {
+   "svm": {
+    "cv_auc_mean": 0.833,
+    "cv_auc_std": 0.022,
+    "brier": 0.156
+   },
+   "random_forest": {
+    "cv_auc_mean": 0.827,
+    "cv_auc_std": 0.023,
+    "brier": 0.158
+   },
+   "xgboost": {
+    "cv_auc_mean": 0.833,
+    "cv_auc_std": 0.021,
+    "brier": 0.153
+   },
+   "ann": {
+    "cv_auc_mean": 0.834,
+    "cv_auc_std": 0.02,
+    "brier": 0.158
+   }
+  }
+ },
+ "heart_disease": {
+  "name": "Coronary Heart Disease (10-year risk)",
+  "n": 3658,
+  "prevalence": 0.1523,
+  "tiers": {
+   "moderate": 0.163,
+   "high": 0.2777,
+   "severe": 0.3718
+  },
+  "cv_auc_mean": 0.73,
+  "cv_auc_std": 0.026,
+  "pr_auc": 0.327,
+  "brier": 0.117,
+  "sensitivity_at_moderate": 0.666,
+  "specificity_at_moderate": 0.693,
+  "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)",
+  "per_model": {
+   "svm": {
+    "cv_auc_mean": 0.734,
+    "cv_auc_std": 0.025,
+    "brier": 0.117
+   },
+   "random_forest": {
+    "cv_auc_mean": 0.721,
+    "cv_auc_std": 0.03,
+    "brier": 0.118
+   },
+   "xgboost": {
+    "cv_auc_mean": 0.72,
+    "cv_auc_std": 0.027,
+    "brier": 0.118
+   },
+   "ann": {
+    "cv_auc_mean": 0.729,
+    "cv_auc_std": 0.025,
+    "brier": 0.118
+   }
+  }
+ },
+ "liver_disease": {
+  "name": "Liver Disease",
+  "n": 579,
+  "prevalence": 0.715,
+  "tiers": {
+   "moderate": 0.795,
+   "high": 0.9143,
+   "severe": 0.97
+  },
+  "cv_auc_mean": 0.743,
+  "cv_auc_std": 0.04,
+  "pr_auc": 0.893,
+  "brier": 0.172,
+  "sensitivity_at_moderate": 0.522,
+  "specificity_at_moderate": 0.897,
+  "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)",
+  "per_model": {
+   "svm": {
+    "cv_auc_mean": 0.75,
+    "cv_auc_std": 0.038,
+    "brier": 0.172
+   },
+   "random_forest": {
+    "cv_auc_mean": 0.741,
+    "cv_auc_std": 0.034,
+    "brier": 0.173
+   },
+   "xgboost": {
+    "cv_auc_mean": 0.727,
+    "cv_auc_std": 0.042,
+    "brier": 0.185
+   },
+   "ann": {
+    "cv_auc_mean": 0.726,
+    "cv_auc_std": 0.046,
+    "brier": 0.178
+   }
+  }
+ },
+ "kidney_disease": {
+  "name": "Chronic Kidney Disease",
+  "n": 400,
+  "prevalence": 0.625,
+  "tiers": {
+   "moderate": 0.4836,
+   "high": 0.5562,
+   "severe": 0.6396
+  },
+  "cv_auc_mean": 0.993,
+  "cv_auc_std": 0.005,
+  "pr_auc": 0.996,
+  "brier": 0.037,
+  "sensitivity_at_moderate": 0.956,
+  "specificity_at_moderate": 0.98,
+  "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)",
+  "per_model": {
+   "svm": {
+    "cv_auc_mean": 0.973,
+    "cv_auc_std": 0.014,
+    "brier": 0.053
+   },
+   "random_forest": {
+    "cv_auc_mean": 0.995,
+    "cv_auc_std": 0.006,
+    "brier": 0.036
+   },
+   "xgboost": {
+    "cv_auc_mean": 0.995,
+    "cv_auc_std": 0.005,
+    "brier": 0.029
+   },
+   "ann": {
+    "cv_auc_mean": 0.973,
+    "cv_auc_std": 0.015,
+    "brier": 0.06
+   }
+  }
+ },
+ "stroke_risk": {
+  "name": "Stroke Risk",
+  "n": 3255,
+  "prevalence": 0.0553,
+  "tiers": {
+   "moderate": 0.0524,
+   "high": 0.1452,
+   "severe": 0.2307
+  },
+  "cv_auc_mean": 0.808,
+  "cv_auc_std": 0.023,
+  "pr_auc": 0.169,
+  "brier": 0.049,
+  "sensitivity_at_moderate": 0.789,
+  "specificity_at_moderate": 0.697,
+  "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)",
+  "per_model": {
+   "svm": {
+    "cv_auc_mean": 0.815,
+    "cv_auc_std": 0.024,
+    "brier": 0.048
+   },
+   "random_forest": {
+    "cv_auc_mean": 0.799,
+    "cv_auc_std": 0.022,
+    "brier": 0.049
+   },
+   "xgboost": {
+    "cv_auc_mean": 0.799,
+    "cv_auc_std": 0.026,
+    "brier": 0.049
+   },
+   "ann": {
+    "cv_auc_mean": 0.802,
+    "cv_auc_std": 0.023,
+    "brier": 0.049
+   }
+  }
+ },
+ "hypothyroidism": {
+  "name": "Hypothyroidism",
+  "n": 2291,
+  "prevalence": 0.0589,
+  "tiers": {
+   "moderate": 0.0656,
+   "high": 0.0754,
+   "severe": 0.2978
+  },
+  "cv_auc_mean": 0.969,
+  "cv_auc_std": 0.019,
+  "pr_auc": 0.715,
+  "brier": 0.026,
+  "sensitivity_at_moderate": 0.97,
+  "specificity_at_moderate": 0.921,
+  "validation": "5-fold stratified cross-validation x5 repeats (held-out folds only)",
+  "per_model": {
+   "svm": {
+    "cv_auc_mean": 0.97,
+    "cv_auc_std": 0.016,
+    "brier": 0.026
+   },
+   "random_forest": {
+    "cv_auc_mean": 0.972,
+    "cv_auc_std": 0.017,
+    "brier": 0.027
+   },
+   "xgboost": {
+    "cv_auc_mean": 0.965,
+    "cv_auc_std": 0.023,
+    "brier": 0.026
+   },
+   "ann": {
+    "cv_auc_mean": 0.968,
+    "cv_auc_std": 0.018,
+    "brier": 0.026
+   }
+  }
+ }
+}
